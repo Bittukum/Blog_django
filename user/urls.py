@@ -3,7 +3,7 @@
 from django.urls import path
 from .views import (UserSignupView,UserLoginView,BlogPostCreateView,
                     BlogPostDetailView,BlogPostListView,CommentListCreateView,
-                    LikeCreateView,SendEmailView,LogoutView)
+                    LikeCreateView,SendEmailView)
 
 urlpatterns = [
     path('signup/', UserSignupView.as_view(), name='user-signup'),
